@@ -1,0 +1,9 @@
+name: snakemake
+channels:
+  - conda-forge
+  - bioconda
+  - panoptes-organization
+  - defaults
+dependencies:
+  - snakemake
+  - panoptes-ui
