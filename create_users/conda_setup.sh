@@ -1,3 +1,3 @@
 #!/bin/bash
-cat /home/bgcflow/create_users/skel_update.txt >> ~/.bashrc # conda init
-cat /home/bgcflow/create_users/welcome-message.md > ~/README.md
+cat create_users/skel_update.txt >> ~/.bashrc # conda init
+cat create_users/welcome-message.md > ~/README.md

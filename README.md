@@ -14,3 +14,5 @@ To create multiple users
 ```bash
 while read -r line; do bash create_users/create_user.sh $line; done < create_users/workshop_participants 
 ```
+
+https://github.com/uglide/azure-content/blob/master/articles/virtual-machines/virtual-machines-linux-mac-disable-ssh-password-usage.md

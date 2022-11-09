@@ -17,5 +17,5 @@ echo "Creating a new account for" $1
 PASSWORD=saXFsD6Vbt0aY
 sudo useradd -m -d /datadrive/home/$1 $1 -p $PASSWORD
 sudo adduser $1 conda
-sudo su -c "bash /home/bgcflow/create_users/conda_setup.sh" $1
+sudo su -c "bash create_users/conda_setup.sh" $1
 echo "job done!"
