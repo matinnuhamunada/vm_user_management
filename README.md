@@ -2,11 +2,29 @@
 Small script to manage users in Azure VM
 
 ## First time login
+0. Setting up github config
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
 1. Connect to github: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+ssh -T git@github.com
+```
 2. Set up HDD: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal
-3. Make datadrive writable to everyone: sudo chmod ugo+rwx /datadrive/
+3. Make datadrive writable to everyone:
+```bash
+sudo chmod ugo+rwx /datadrive/
+ln -s /datadrive datadrive
+```
 4. Install Miniconda: https://docs.conda.io/en/latest/miniconda.html#linux-installers
-5. Install mamba: conda install -n base -c conda-forge mamba
+5. Install mamba:
+```bash
+conda install -n base -c conda-forge mamba
+```
 6. Install azcopy: https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10
 ```bash
 sudo cp azcopy_linux_amd64_10.16.2/azcopy /usr/local/bin
