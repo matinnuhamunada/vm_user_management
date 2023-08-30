@@ -32,6 +32,9 @@ sudo chmod +x /usr/local/bin/azcopy
 ```
 7. Install gcc: https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/
 
+## Using GPU
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup
+
 ## Creating new user
 - Use the script in [`create_users/create_user.sh`](create_user.sh)
 ```bash
