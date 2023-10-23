@@ -20,8 +20,8 @@ ssh -T git@github.com
 sudo chmod ugo+rwx /datadrive/
 ln -s /datadrive datadrive
 ```
-4. Install Miniconda: https://docs.conda.io/en/latest/miniconda.html#linux-installers
-5. Install mamba:
+4. Install Miniforge: [https://docs.conda.io/en/latest/miniconda.html#linux-installers](https://github.com/conda-forge/miniforge#mambaforge)
+5. Install mamba (if not yet installed):
 ```bash
 conda install -n base -c conda-forge mamba
 ```
